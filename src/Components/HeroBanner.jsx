@@ -1,4 +1,4 @@
-
+import banner from "../assets/banner.png"
 
 const HeroBanner = () => {
     return (
@@ -7,21 +7,29 @@ const HeroBanner = () => {
           <div
             className="hero min-h-[600px] rounded-3xl"
             style={{
-              backgroundImage: `url(${require("./banner.png")})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundImage: `url(${banner})`,
             }}
           >
-            <div className="hero-overlay rounded-3xl  bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
-              <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+            <div className="hero-overlay rounded-3xl  bg-opacity-20"></div>
+            <div className="hero-content text-center text-white ">
+              <div className="">
+                <h1 className="text-5xl font-bold">
+                  Discover an exceptional cooking <br /> class tailored for you!
+                </h1>
+                <p className="mt-6">
+                  Learn and Master Basic Programming, Data Structures,
+                  Algorithm, OOP, Database and solve 500+ coding <br /> problems
+                  to become an exceptionally well world-class Programmer.
                 </p>
-                <button classNameName="btn btn-primary">Get Started</button>
+
+                <div className="mt-10">
+                  <button className="mr-4 btn rounded-[50px] px-7  bg-[#0BE58A] text-[#150B2B] text-xl font-semibold">
+                    Explore Now
+                  </button>
+                  <button className="btn rounded-[50px] text-white px-7 bg-transparent text-xl font-semibold">
+                    Our Feedback
+                  </button>
+                </div>
               </div>
             </div>
           </div>

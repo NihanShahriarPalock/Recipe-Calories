@@ -81,7 +81,7 @@ const Navbar = () => {
                 <input type="text" placeholder="Search" className="grow " />
               </label>
             </div>
-            <div className="bg-[#0BE58A] p-2 rounded-3xl">
+            <div className="hidden lg:block bg-[#0BE58A] p-2 rounded-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
