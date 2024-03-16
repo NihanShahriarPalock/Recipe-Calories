@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Item = ({ item }) => {
+const Item = ({ item, handleItemPrepare }) => {
   // console.log(item);
   const {
     recipe_name,
@@ -30,8 +30,14 @@ const Item = ({ item }) => {
           <p className="text-[#282828] font-medium text-lg">
             Ingredients: {ingredients.length}{" "}
           </p>
-          <p>{ingredients[1]}</p>
-          
+          <ol className="text-[#878787] font-fira-sans mt-4">
+            {ingredients.slice(0).map((ingredient, i) => (
+              <li key={i}>
+                {i + 1}. {ingredient}
+              </li>
+            ))}
+          </ol>
+
           <div className="mt-4 mb-6 divider"></div>
           <div className="mb-6 flex text-[#282828CC] gap-4 ">
             <div className="flex gap-2">
@@ -107,7 +113,10 @@ const Item = ({ item }) => {
               </p>
             </div>
           </div>
-          <button className="bg-[#0BE58A] rounded-[50px] p-4 font-medium text-lg text-[#150B2B]">
+          <button
+            onClick={() => handleItemPrepare(item)}
+            className="bg-[#0BE58A] rounded-[50px] p-4 font-medium text-lg text-[#150B2B]"
+          >
             Want to Cook
           </button>
         </div>
@@ -117,5 +126,6 @@ const Item = ({ item }) => {
 };
 Item.propTypes = {
   item: PropTypes.object.isRequired,
+  handleItemPrepare:PropTypes.func
 };
 export default Item;
