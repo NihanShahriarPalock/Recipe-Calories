@@ -19,9 +19,8 @@ const ItemAdd = ({bookmark}) => {
         <div className="overflow-x-auto">
           <table className="table table-zebra">
             <thead>
-              <tr>
-                
-                <th>{recipe_name}</th>
+              <tr className="flex justify-evenly items-center ">
+                <th className="justify-end">{recipe_name}</th>
                 <th>{preparing_time} minutes</th>
                 <th>{calories} calories</th>
                 <th>
@@ -34,7 +33,6 @@ const ItemAdd = ({bookmark}) => {
             <tbody></tbody>
           </table>
         </div>
-
       </>
     );
 };

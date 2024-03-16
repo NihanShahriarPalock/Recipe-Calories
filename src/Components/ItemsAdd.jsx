@@ -3,7 +3,7 @@ import ItemAdd from './ItemAdd';
 
 const ItemsAdd = ({bookmarks}) => {
   return (
-    <div className="w-full lg:w-2/5 border border-blue-600">
+    <div className="w-full lg:w-2/5 border min-h-fit h-full border-blue-600">
       <h1 className="text-center text-2xl font-semibold text-[#282828] ">
         Want to Cook : {bookmarks.length}
       </h1>
@@ -19,7 +19,7 @@ const ItemsAdd = ({bookmarks}) => {
       <div className="overflow-x-auto">
         <table className="table table-zebra">
           <thead>
-            <tr>
+            <tr className='flex justify-evenly'>
               
               <th>Name</th>
               <th>Time</th>
