@@ -1,0 +1,101 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Grilled Salmon",
+    "short_description": "Delicious grilled salmon with lemon and herbs.",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 lemons",
+      "1/4 cup olive oil",
+      "2 cloves garlic",
+      "Salt and pepper to taste",
+      "Fresh herbs (such as dill or parsley)"
+    ],
+    "preparing_time": 20,
+    "calories": 300,
+    "recipe_image": "https://i.ibb.co/Dp237dg/featured-grilled-salmon-recipe.jpg"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Vegetable Stir-Fry",
+    "short_description": "Healthy and colorful vegetable stir-fry.",
+    "ingredients": [
+      "2 cups broccoli florets",
+      "1 red bell pepper",
+      "1 yellow bell pepper",
+      "1 carrot",
+      "1 cup snap peas",
+      "3 tablespoons soy sauce",
+      "2 tablespoons sesame oil"
+    ],
+    "preparing_time": "25",
+    "calories": 200,
+    "recipe_image": "https://i.ibb.co/L69V4ZB/Vegetable-Stir-Fry-9.jpg"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Spaghetti Carbonara",
+    "short_description": "Classic Italian pasta dish with creamy sauce and bacon.",
+    "ingredients": [
+      "400g spaghetti",
+      "150g pancetta or bacon",
+      "4 large eggs",
+      "1 cup grated Parmesan cheese",
+      "2 cloves garlic",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 30,
+    "calories": 450,
+    "recipe_image": "https://i.ibb.co/1G1xL1C/spaghetti-carbonara.jpg"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Caprese Salad",
+    "short_description": "Simple and refreshing salad with tomatoes, mozzarella, and basil.",
+    "ingredients": [
+      "4 large tomatoes",
+      "1 ball fresh mozzarella cheese",
+      "1/4 cup fresh basil leaves",
+      "2 tablespoons balsamic vinegar",
+      "2 tablespoons olive oil",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 15,
+    "calories": 150,
+    "recipe_image": "https://i.ibb.co/239tW6m/Caprese-Salad.jpg"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Chicken Fajitas",
+    "short_description": "Flavorful and easy chicken fajitas with bell peppers and onions.",
+    "ingredients": [
+      "500g chicken breast strips",
+      "2 bell peppers",
+      "1 onion",
+      "2 tablespoons fajita seasoning",
+      "1 tablespoon olive oil",
+      "Tortillas and toppings (sour cream, salsa, guacamole) for serving"
+    ],
+    "preparing_time": 35,
+    "calories": 350,
+    "recipe_image": "https://i.ibb.co/0YXDhMV/Chicken-Fajitas.jpg"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Quinoa Salad",
+    "short_description": "Nutritious quinoa salad with vegetables and vinaigrette dressing.",
+    "ingredients": [
+      "1 cup quinoa",
+      "2 cups water or vegetable broth",
+      "1 cucumber",
+      "1 bell pepper",
+      "1/2 cup cherry tomatoes",
+      "1/4 cup chopped fresh parsley",
+      "3 tablespoons olive oil",
+      "2 tablespoons lemon juice"
+    ],
+    "preparing_time": 25,
+    "calories": 250,
+    "recipe_image": "https://i.ibb.co/7rRms9j/Quinoa-Salad.jpg"
+  }
+]
