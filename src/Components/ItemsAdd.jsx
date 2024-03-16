@@ -2,8 +2,7 @@ import PropTypes from 'prop-types'
 import ItemAdd from './ItemAdd';
 import CurrentlyCookings from './CurrentlyCookings';
 import { useState } from 'react';
-
-
+import SingleCook from './SingleCook';
 
 const ItemsAdd = ({bookmarks}) => {
 
@@ -53,6 +52,12 @@ const ItemsAdd = ({bookmarks}) => {
           bookmark={bookmark}
         ></ItemAdd>
       ))}
+
+      {/* {bookmarks.map((cart) => (
+        <SingleCook key={cart.recipe_id} cart={cart}></SingleCook>
+      ))} */}
+
+     
 
       <CurrentlyCookings carts={carts}></CurrentlyCookings>
     </div>

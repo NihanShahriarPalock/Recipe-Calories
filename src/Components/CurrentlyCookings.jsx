@@ -2,10 +2,11 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Cooking from "./Cooking";
+import SingleCook from "./SingleCook"
 
 
 const CurrentlyCookings = ({carts}) => {
-    const { recipe_name, preparing_time, calories } = carts;
+    
 
     const [blogs,setBlogs]=useState([]);
 
@@ -38,21 +39,25 @@ const CurrentlyCookings = ({carts}) => {
         </table>
       </div>
 
-      <div className="mt-6 overflow-x-auto">
+      {/* <div className="mt-6 overflow-x-auto">
         <table className="table table-zebra">
           <thead>
             <tr className="flex justify-evenly">
-              <th>{recipe_name}</th>
+              <th>name</th>
               <th>Time</th>
               <th>Calories</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
-      </div>
+      </div> */}
 
-      {blogs.map((blog) => (
-        <Cooking key={blog.recipe_id} blog={blog}></Cooking>
+      {/* {blogs.map((blog) => (
+        <SingleCook key={blog.recipe_id} blog={blog}></SingleCook>
+      ))} */}
+
+      {carts.map((cart) => (
+        <SingleCook key={cart.recipe_id} cart={cart}></SingleCook>
       ))}
     </div>
   );
