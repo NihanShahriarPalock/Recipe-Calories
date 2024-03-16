@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types'
 import ItemAdd from './ItemAdd';
+import CurrentlyCookings from './CurrentlyCookings';
+
 
 const ItemsAdd = ({bookmarks}) => {
+
+
   return (
     <div className="w-full lg:w-2/5 border min-h-fit h-full border-blue-600">
       <h1 className="text-center text-2xl font-semibold text-[#282828] ">
@@ -9,12 +13,11 @@ const ItemsAdd = ({bookmarks}) => {
       </h1>
 
       <div className="divider mt-4 mb-6"></div>
-   
+
       <div className="overflow-x-auto">
         <table className="table table-zebra">
           <thead>
-            <tr className='flex justify-evenly'>
-              
+            <tr className="flex justify-evenly">
               <th>Name</th>
               <th>Time</th>
               <th>Calories</th>
@@ -24,18 +27,14 @@ const ItemsAdd = ({bookmarks}) => {
           <tbody></tbody>
         </table>
       </div>
-        
 
-        {/* Currently Cooking */}
-      <div>
-        <h1 className='text-2xl font-semibold text-[]'>Currently Cooking</h1>
-      </div>
-
-     
+    
 
       {bookmarks.map((bookmark) => (
         <ItemAdd key={bookmark.id} bookmark={bookmark}></ItemAdd>
       ))}
+
+    <CurrentlyCookings></CurrentlyCookings>
     </div>
   );
 };
