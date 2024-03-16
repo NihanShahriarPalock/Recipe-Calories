@@ -9,6 +9,29 @@ const ItemsAdd = ({bookmarks}) => {
       </h1>
 
       <div className="divider mt-4 mb-6"></div>
+      {/* <div className='flex justify-evenly'>
+        <p>Name</p>
+        <p>Time</p>
+        <p>Calories</p>
+      </div> */}
+
+      {/* Start */}
+      <div className="overflow-x-auto">
+        <table className="table table-zebra">
+          <thead>
+            <tr>
+              
+              <th>Name</th>
+              <th>Time</th>
+              <th>Calories</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      {/* Finish */}
 
       {bookmarks.map((bookmark) => (
         <ItemAdd key={bookmark.id} bookmark={bookmark}></ItemAdd>
