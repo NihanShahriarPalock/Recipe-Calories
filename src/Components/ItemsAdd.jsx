@@ -1,10 +1,28 @@
 import PropTypes from 'prop-types'
 import ItemAdd from './ItemAdd';
 import CurrentlyCookings from './CurrentlyCookings';
+import { useState } from 'react';
+
 
 
 const ItemsAdd = ({bookmarks}) => {
 
+  const[carts,setCarts]=useState([]);
+
+  const handleAddToCart = blog =>{
+    console.log(blog);
+    const newCarts = [...carts,blog]
+    setCarts(newCarts)
+    // console.log(carts);
+  }
+
+  
+  // const [cart,setCart]=useState([]);
+  // const handleCart =(p)=>{
+  
+  //   setCart([p]);
+  // }
+  // console.log(cart);
 
   return (
     <div className="w-full lg:w-2/5 border min-h-fit h-full border-blue-600">
@@ -28,13 +46,15 @@ const ItemsAdd = ({bookmarks}) => {
         </table>
       </div>
 
-    
-
       {bookmarks.map((bookmark) => (
-        <ItemAdd key={bookmark.id} bookmark={bookmark}></ItemAdd>
+        <ItemAdd
+          key={bookmark.id}
+          handleAddToCart={handleAddToCart}
+          bookmark={bookmark}
+        ></ItemAdd>
       ))}
 
-    <CurrentlyCookings></CurrentlyCookings>
+      <CurrentlyCookings carts={carts}></CurrentlyCookings>
     </div>
   );
 };
