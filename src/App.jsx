@@ -27,12 +27,11 @@ function App() {
       <Navbar></Navbar>
       <HeroBanner></HeroBanner>
       <Recipes></Recipes>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row lg:mx-32">
         <Items handleItemPrepare={handleItemPrepare}></Items>
         <ItemsAdd bookmarks={bookmarks}></ItemsAdd>
       </div>
       <ToastContainer />
-      
     </>
   );
 }

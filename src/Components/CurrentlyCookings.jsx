@@ -6,11 +6,13 @@ import SingleCook from "./SingleCook"
 const CurrentlyCookings = ({ carts, prepareTime, calories }) => {
 
   const [blogs, setBlogs] = useState([]);
+  console.log(blogs);
 
   useEffect(() => {
     fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
+      
   }, []);
 
   return (
@@ -61,6 +63,8 @@ const CurrentlyCookings = ({ carts, prepareTime, calories }) => {
 };
 CurrentlyCookings.propTypes = {
   bookmarks: PropTypes.array,
-  
+  carts: PropTypes.object,
+  prepareTime: PropTypes.object,
+  calories: PropTypes.object,
 };
 export default CurrentlyCookings;

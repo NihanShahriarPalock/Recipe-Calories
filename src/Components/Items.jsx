@@ -13,7 +13,7 @@ const Items = ({handleItemPrepare}) => {
   }, []);
 
   return (
-    <div className=" lg:mx-32 w-full lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 border border-red-600">
+    <div className="w-full lg:w-3/5 grid grid-cols-1 lg:grid-cols-2  ">
       {items.map((item) => (
         <Item
           key={item.recipe_id}

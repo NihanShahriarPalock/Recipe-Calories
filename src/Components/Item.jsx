@@ -12,7 +12,7 @@ const Item = ({ item, handleItemPrepare }) => {
   } = item;
   return (
     <>
-      <div className="border border-red-500 rounded-2xl m-6">
+      <div className="border  rounded-2xl mr-6">
         <div className="w-[331px] h-48 px-6 pt-6">
           <img
             className="w-full h-full  rounded-2xl"
