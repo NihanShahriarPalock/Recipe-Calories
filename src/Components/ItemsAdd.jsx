@@ -2,26 +2,32 @@ import PropTypes from 'prop-types'
 import ItemAdd from './ItemAdd';
 import CurrentlyCookings from './CurrentlyCookings';
 import { useState } from 'react';
-import SingleCook from './SingleCook';
+// import SingleCook from './SingleCook';
 
 const ItemsAdd = ({bookmarks}) => {
 
   const[carts,setCarts]=useState([]);
 
   const handleAddToCart = blog =>{
-    console.log(blog);
+    // console.log(blog);
     const newCarts = [...carts,blog]
     setCarts(newCarts)
-    // console.log(carts);
+    
   }
 
-  
-  // const [cart,setCart]=useState([]);
-  // const handleCart =(p)=>{
-  
-  //   setCart([p]);
-  // }
-  // console.log(cart);
+  // Prepare Time State 
+  const [prepareTime, setPrepareTime] = useState(0);
+  const handlePrepareTime = time =>{
+    setPrepareTime(prepareTime+time)
+   
+  }
+
+const [calories, setCalories] = useState(0);
+const handleCalories = calory =>{
+  setCalories(calories+calory)
+}
+
+
 
   return (
     <div className="w-full lg:w-2/5 border min-h-fit h-full border-blue-600">
@@ -50,16 +56,16 @@ const ItemsAdd = ({bookmarks}) => {
           key={bookmark.id}
           handleAddToCart={handleAddToCart}
           bookmark={bookmark}
+          handlePrepareTime={handlePrepareTime}
+          handleCalories={handleCalories}
         ></ItemAdd>
       ))}
 
-      {/* {bookmarks.map((cart) => (
-        <SingleCook key={cart.recipe_id} cart={cart}></SingleCook>
-      ))} */}
-
-     
-
-      <CurrentlyCookings carts={carts}></CurrentlyCookings>
+      <CurrentlyCookings
+        prepareTime={prepareTime}
+        calories={calories}
+        carts={carts}
+      ></CurrentlyCookings>
     </div>
   );
 };
