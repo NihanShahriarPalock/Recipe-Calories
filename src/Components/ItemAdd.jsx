@@ -10,11 +10,11 @@ const ItemAdd = ({
   return (
     <>
       <div className="overflow-x-auto">
-        <table className="table table-zebra">
+        <table className="table table-xs">
           <thead>
-            <tr className="flex justify-evenly items-center ">
+            <tr className="flex  items-center ">
               
-              <th className="justify-end">{recipe_name}</th>
+              <th className="">{recipe_name}</th>
               <th>{preparing_time} minutes</th>
               <th>{calories} calories</th>
               <th>

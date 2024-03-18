@@ -17,9 +17,9 @@ const HeroBanner = () => {
                   Discover an exceptional cooking <br /> class tailored for you!
                 </h1>
                 <p className="mt-6">
-                  Learn and Master Basic Programming, Data Structures,
-                  Algorithm, OOP, Database and solve 500+ coding <br /> problems
-                  to become an exceptionally well world-class Programmer.
+                  Our Recipes emphasize simplicity and versatility, utilizing
+                  readily available <br /> ingredients to create mouthwatering
+                  masterpieces in your own kitchen.
                 </p>
 
                 <div className="mt-10">

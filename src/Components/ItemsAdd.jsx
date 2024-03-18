@@ -35,9 +35,9 @@ const handleCalories = calory =>{
       <div className="divider mt-4 mb-6"></div>
 
       <div className="overflow-x-auto">
-        <table className="table table-zebra">
+        <table className="table table-xs">
           <thead>
-            <tr className="flex justify-evenly">
+            <tr className="">
               <th>Name</th>
               <th>Time</th>
               <th>Calories</th>

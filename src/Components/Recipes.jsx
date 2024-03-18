@@ -8,9 +8,8 @@ const Recipes = () => {
             Our Recipes
           </h1>
           <p className="text-[#150B2B99] text-center mt-6 mb-12">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-            elementum mauris aenean neque.{" "}
+            Dive into a world of diverse, easy-to-follow recipes, perfect for
+            any occasion or skill level!
           </p>
         </div>
       </>

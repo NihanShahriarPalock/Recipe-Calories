@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const Item = ({ item, handleItemPrepare }) => {
-  // console.log(item);
+  
   const {
     recipe_name,
     short_description,
